@@ -1,0 +1,25 @@
+<script>
+jQuery(function() {
+        window.scrollTo( 0, 0 );
+});
+</script>
+<script src="/socket.io/socket.io.js"></script> 
+<script src="/javascripts/wsclient.js"></script>
+<div id="container" class="channel">
+	<div id="header">
+		<h1><img src="/images/h1_logo.gif" width="168" height="76" alt="MUSIC BOXEL" /></h1>
+	</div>	
+	<div id="content">
+		<h2><img src="/images/blank.gif" width="21" height="15" alt="" /><!-- img src="/images/add_anime0<%= channel %>.gif" width="21" height="15" alt="" /><img src="/images/remove_anime0<%= channel %>.gif" width="21" height="15" alt="" / --></h2>
+		<form action="." data-channel="<%= channel %>">
+		<ul>
+			<li><input id="add" type="image" src="/images/h3_channel_add_0<%= channel %>.gif" /></li><!--
+			--><li><input id="remove" type="image" src="/images/h3_channel_remove_0<%= channel %>.gif" /></li>
+		</ul>
+		</form>
+		<p><a id="exit" href="/sp_gameover.html"><img src="/images/h4_channel_01.gif" width="57" height="8" alt="EXIT" /></a></p>
+	</div>	
+	<div id="footer">
+		<img src="/images/footer.gif" width="103" height="7" alt="Aircord &amp; Uniba" />
+	</div>
+</div>

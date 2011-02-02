@@ -1,0 +1,13 @@
+script(src="/javascripts/wsclient.js")
+h1= title
+h2 console for smartphones
+h3= "channel: " + channel
+
+form(action: ".", "data-channel": channel)
+	p
+		button(id="add") Add
+	p
+		button(id="remove") Remove
+
+p
+	a(href: "/") Exit
